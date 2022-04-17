@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+
+:root {
+    --color1: #c6d57e;
+    --color2: #d57e7e;
+    --color3: #a2cdcd;
+    --color4: #ffe1af;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: normal;
+}
+
+/* =======Onde a mágica acontece====== */
+html {
+    scroll-behavior: smooth;
+}
+
+
+h2 {
+    font-size: 120px;
+
+    background: -webkit-linear-gradient(
+        -150deg,
+        var(--color1),
+        var(--color2),
+        var(--color3),
+        var(--color4)
+    );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+/* ====Nav==== */
+nav {
+    /* Para rolar junto com scroll */
+    position: fixed;
+    /* bottom: 50%; */
+    top: 50%;
+    transform: translateY(-50%);
+}
+.nav {
+    /* BLOCK permite que sete altura e largura */
+    display: block;
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+    border-radius: 0 15%;
+    /* box-shadow: 1px 1px 1px black; */
+    box-shadow: inset 1px 1px 5px rgb(114, 114, 114);
+}
+
+/* Colocar "maozinha" para click */
+.nav:hover {
+    transform: scale(1.05);
+}
+
+.nav-1 {
+    background-color: var(--color1);
+}
+.nav-2 {
+    background-color: var(--color2);
+}
+.nav-3 {
+    background-color: var(--color3);
+}
+.nav-4 {
+    background-color: var(--color4);
+}
+
+/* ====Box===== */
+.box {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#box-1 {
+    background-color: var(--color1);
+}
+#box-2 {
+    background-color: var(--color2);
+}
+#box-3 {
+    background-color: var(--color3);
+}
+#box-4 {
+    background-color: var(--color4);
+}
